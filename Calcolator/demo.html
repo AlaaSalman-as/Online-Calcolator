@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Calcolator </title>
+    <link rel="icon" href="iconfinder_calculator_1055102.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="fonts/Myrlissa - Personal Use.otf">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="js/all.min.js"></script>
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+    </style>
+</head>
+<body>
+<!------------------------------------------------------------------------------------------>
+<section class="mainSection">
+
+    <section class="container">
+
+        <section class="titles">
+            <section class="titleN1 title bounce-in-left">
+                <h1 class="white myrlissa font_5">ONLINE </h1>
+                <h1 class="bink myrlissa font_5"> CALCULATOR </h1>
+            </section>
+            <section class="titleN2 title bounce-in-left">
+                <h5 class="bink yusei font_2">Developed By. </h5>
+                <h5 class="white yusei font_2">Ala'a Odeh </h5>
+            </section>
+            <section class="sochialMediaDetails bounce-in-left">
+                <a href="https://www.facebook.com/alaa.salman.98031" target="_blank"><i class="fab fa-facebook-f contactIcone"></i></a>
+                <a href="mailto: lol2182015@gmail.com" target="_blank"><i class="fas fa-envelope contactIcone"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=00972592838927" target="_blank"><i class="fab fa-whatsapp contactIcone"></i></a>
+            </section>
+        </section>
+
+
+        <section class="calcolator bounce-in-right">
+
+            <section class="innerCalc">
+
+                <form name="form1" class="calci" action="demo.html" method="POST" id="form1">
+                    <input type="text" name="answer" id="display" class="btn btn-lg">
+                    <input type="button" class="btn btnDesign ml-2" value="C" onclick="form1.answer.value=' '">
+                    <input type="button" class="btn btnDesign" value="<" onclick="form1.answer.value=form1.answer.value.substring(0,form1.answer.value.length * 1-1)">
+                    <input type="button" class="btn btnDesign" value="0" onclick="form1.answer.value='0'">
+                    <input type="button" class="btn btnDesign" value="/" onclick="form1.answer.value+='/'">
+                    <br><br>
+                    <input type="button" class="btn btnDesign ml-2" value="7" onclick="form1.answer.value+='7'">
+                    <input type="button" class="btn btnDesign" value="8" onclick="form1.answer.value+='8'">
+                    <input type="button" class="btn btnDesign" value="9" onclick="form1.answer.value+='9'">
+                    <input type="button" class="btn btnDesign" value="*" class="operatorDesign" onclick="form1.answer.value+='*'">
+                    <br><br>
+                    <input type="button" class="btn btnDesign ml-2" value="4" onclick="form1.answer.value+='4'">
+                    <input type="button" class="btn btnDesign" value="5" onclick="form1.answer.value+='5'">
+                    <input type="button" class="btn btnDesign" value="6" onclick="form1.answer.value+='6'">
+                    <input type="button" class="btn btnDesign" value="-" class="operatorDesign" onclick="form1.answer.value+='-'">
+                    <br><br>
+                    <input type="button" class="btn btnDesign ml-2" value="1" onclick="form1.answer.value+='1'">
+                    <input type="button" class="btn btnDesign" value="2" onclick="form1.answer.value+='2'">
+                    <input type="button" class="btn btnDesign" value="3" onclick="form1.answer.value+='3'">
+                    <input type="button" class="btn btnDesign" value="+" class="operatorDesign" onclick="form1.answer.value+='+'">
+                    <br><br>
+                    <input type="button" class="btn ml-2"id="zero" value="0" onclick="form1.answer.value+='0'">
+                    <input type="button" class="btn btnDesign" value="." onclick="form1.answer.value+='.'">
+                    <input type="button" class="btn btnDesign" value="=" class="operatorDesign" onclick="form1.answer.value=eval(form1.answer.value)">
+                    
+
+                </form>
+            </section>
+        </section>
+    </section>
+</section>
+<!------------------------------------------------------------------------------------------>
+    
+</body>
+</html>
